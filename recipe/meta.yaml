@@ -1,6 +1,6 @@
 {% set name = "retrolab" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "841cacdde5d4d95314efb3c35a171c7c1009bd521f7989de7cf37aff3e31e3bb" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "943fb6d3e6358f89b59c6ca7f6630be1c785394749d02982cfde91a641abd0df" %}
 
 package:
   name: {{ name }}
@@ -41,13 +41,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/jtpio/retrolab
+  home: https://github.com/jupyterlab/retrolab
   summary: JupyterLab distribution with a retro look and feel 
   license: BSD-3-Clause
   license_file: LICENSE
   description: |
     JupyterLab distribution with a retro look and feel
-  dev_url: https://github.com/jtpio/retrolab
+  dev_url: https://github.com/jupyterlab/retrolab
 
 extra:
   recipe-maintainers:
