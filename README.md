@@ -1,7 +1,7 @@
 About retrolab
 ==============
 
-Home: https://github.com/jtpio/retrolab
+Home: https://github.com/jupyterlab/retrolab
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/retrolab-feedst
 
 Summary: JupyterLab distribution with a retro look and feel
 
-Development: https://github.com/jtpio/retrolab
+Development: https://github.com/jupyterlab/retrolab
 
 JupyterLab distribution with a retro look and feel
 
