@@ -10,7 +10,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -52,3 +52,6 @@ about:
 extra:
   recipe-maintainers:
     - jtpio
+    - blink1073
+    - afshin
+    - Zsailer
