@@ -120,5 +120,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@afshin](https://github.com/afshin/)
+* [@blink1073](https://github.com/blink1073/)
 * [@jtpio](https://github.com/jtpio/)
 
