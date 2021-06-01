@@ -1,6 +1,6 @@
 {% set name = "retrolab" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "943fb6d3e6358f89b59c6ca7f6630be1c785394749d02982cfde91a641abd0df" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "a3836d3c9d3c69ca8df7ab249717408f55ba2071ff22731d1c6b2a269fe4202e" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/jupyterlab/retrolab
-  summary: JupyterLab distribution with a retro look and feel 
+  summary: JupyterLab distribution with a retro look and feel
   license: BSD-3-Clause
   license_file: LICENSE
   description: |
