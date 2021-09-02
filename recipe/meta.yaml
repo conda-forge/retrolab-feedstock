@@ -1,6 +1,6 @@
 {% set name = "retrolab" %}
-{% set version = "0.3.2" %}
-{% set sha256 = "dc0f1b98bf862cf6f1d4dcf905799f1fa440e9c157362e16fcf5feb26f6292cd" %}
+{% set version = "0.3.3" %}
+{% set sha256 = "82c3bd1e37f577b8f66371a29dfca20dacdff72e7cad5fd52c332b7b098c0a42" %}
 
 package:
   name: {{ name }}
