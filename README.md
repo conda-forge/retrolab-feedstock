@@ -13,7 +13,6 @@ Development: https://github.com/jupyterlab/retrolab
 
 JupyterLab distribution with a retro look and feel
 
-
 Current build status
 ====================
 
@@ -123,5 +122,6 @@ Feedstock Maintainers
 
 * [@afshin](https://github.com/afshin/)
 * [@blink1073](https://github.com/blink1073/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@jtpio](https://github.com/jtpio/)
 
