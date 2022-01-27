@@ -1,4 +1,4 @@
-{% set version = "0.3.17" %}
+{% set version = "0.3.18" %}
 
 package:
   name: retrolab
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/retrolab/retrolab-{{ version }}.tar.gz
-  sha256: 349c1d6713b7900c7b4d7d368c2ff7243950102d2faabfa5d447c0e1e6b39fb2
+  sha256: 5f590e2e918ef8c7ada5d2590381e042a79d724a062d2563a71d893cf8ea62c2
 
 build:
   number: 0
