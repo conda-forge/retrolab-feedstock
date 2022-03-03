@@ -19,15 +19,15 @@ requirements:
   host:
     - jupyter-packaging >=0.10,<1
     - pip
-    - python >=3.6
+    - python >=3.7
 
   run:
     - nbclassic >=0.2,<1
-    - jupyterlab >=3.2.0,<4
+    - jupyterlab >=3.3.0,<4
     - jupyterlab_server >=2.3,<3
     - jupyter_server >=1.4,<2
-    - python >=3.6
-    - tornado >=6.1
+    - python >=3.7
+    - tornado >=6.1.0
 
 test:
   imports:
