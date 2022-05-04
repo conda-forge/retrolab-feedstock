@@ -1,4 +1,4 @@
-{% set version = "0.3.20" %}
+{% set version = "0.3.21" %}
 
 package:
   name: retrolab
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/retrolab/retrolab-{{ version }}.tar.gz
-  sha256: 9fad30fbcc9fb8384a5a239317362ad98df1eb9316dbbea83ba47d4038e58a06
+  sha256: 06df283b25ba52678d679b2a64d925ece3e14e38dff1094d973fae2af15ca0a6
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
 
   run:
     - nbclassic >=0.2,<1
-    - jupyterlab >=3.3.0,<4
+    - jupyterlab >=3.4.0,<4
     - jupyterlab_server >=2.3,<3
     - jupyter_server >=1.4,<2
     - python >=3.7
