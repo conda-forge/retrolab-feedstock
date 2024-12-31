@@ -5,13 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/retrolab/retrolab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/retrolab/retrolab-{{ version }}.tar.gz
   sha256: 06df283b25ba52678d679b2a64d925ece3e14e38dff1094d973fae2af15ca0a6
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
   entry_points:
     - jupyter-retro = retrolab.app:main
 
@@ -19,14 +20,14 @@ requirements:
   host:
     - jupyter-packaging >=0.10,<1
     - pip
-    - python >=3.7
-
+    - python {{ python_min }}
+    - setuptools
   run:
     - nbclassic >=0.2,<1
-    - jupyterlab >=3.4.0,<4
+    - jupyterlab >=3.4.0,<3.5
     - jupyterlab_server >=2.3,<3
     - jupyter_server >=1.4,<2
-    - python >=3.7
+    - python >={{ python_min }}
     - tornado >=6.1.0
 
 test:
@@ -38,6 +39,7 @@ test:
     - jupyter labextension list
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jupyterlab/retrolab
