@@ -11,7 +11,8 @@ source:
 build:
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
   entry_points:
     - jupyter-retro = retrolab.app:main
 
@@ -20,10 +21,10 @@ requirements:
     - jupyter-packaging >=0.10,<1
     - pip
     - python {{ python_min }}
-
+    - setuptools
   run:
     - nbclassic >=0.2,<1
-    - jupyterlab >=3.4.0,<4
+    - jupyterlab >=3.4.0,<3.5
     - jupyterlab_server >=2.3,<3
     - jupyter_server >=1.4,<2
     - python >={{ python_min }}
